@@ -39,4 +39,6 @@ program
 program.parse();
 
 const options = program.opts();
-invokeAction(options);
+(async () => {
+  await invokeAction(options);
+})();
